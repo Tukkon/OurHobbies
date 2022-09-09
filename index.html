@@ -1,44 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-   
 <head>
-   <title>Our Hobbies</title>
-   <link rel="stylesheet" href="body.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finest girl hmm...</title>
+    
 </head>
-
 <body>
     <table style="width:100%; height: 800px">
         <tr>
-            <td colspan="3" class="header">Our Hobbies</td>
+            <td colspan="3" class="header">Welcome to our site!</td>
         </tr>
         <tr>
-            <td class="section">Tuvshindorj</td>
-            <td class="section ">Urangoo</td>
-            <td class="section">Tselmuun</td>
+            <td class="content" id="name"></td>
+            <td onclick="random()" class="button"> Let's Start</td>          
+            <td class="content" id="names"></td>
         </tr>
         <tr>
             <td class="hobby">
-                ☙Listen Music <br/>
-                ☙Watch Movie<br/>
-                ☙Coding<br/>
-                ☙Play Video Games<br/>
+               
             </td>
             <td class="hobby" >
-                ☙eruul hoolloh<br/>
-                ☙hiin buudlaga<br/>
-                ☙kino uzh<br/>
-                ☙baking<br/>
+               
             </td>
             <td class="hobby" >
-                ♥listen to music<br/>
-                ♥drawing<br/>
-                ♥utsaa oroldoh<br/>
-                ♥go out/ teneh<br/>
+
             </td>
         </tr>
     </table>
-
 </body>
-   
-
+<script>
+    const random = () => {
+        const names = ['Baysal', 'Namuun', 'T.Saruul', 'N.Saruul', 'Tselmeg', 'Tselmuun', 'Tergel', 'Bolormaa', 'Tugsjargal', 'Dulguun']
+        document.getElementById("name").innerHTML = names[Math.trunc(Math.random() * 10)]
+        document.getElementById("names").innerHTML = names[Math.trunc(Math.random() * 10)]
+    }
+</script>
 </html>
