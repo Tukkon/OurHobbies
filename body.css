@@ -24,14 +24,14 @@ border-collapse: collapse;
     text-align: center;
 }
 
-.class {
+.class{
     width:33%; 
     height:100px ;
     font-size: 30px;
     text-align: center;
 }
-.button {
-width:34%;
-font-size: 20px;
-text-align:center;
+.button{
+    width:34%;
+    font-size: 20px;
+    text-align: center;
 }
