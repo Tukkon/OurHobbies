@@ -24,13 +24,13 @@ border-collapse: collapse;
     text-align: center;
 }
 
-.section {
+.class {
     width:33%; 
     height:100px ;
     font-size: 30px;
     text-align: center;
 }
-.hobby {
+.button {
 font-size: 20px;
 text-align:center;
 }
