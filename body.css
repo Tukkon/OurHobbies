@@ -35,3 +35,9 @@ border-collapse: collapse;
     font-size: 20px;
     text-align: center;
 }
+.button:hover {
+    top: -25px;
+}
+.header:hover {
+    top: -25px;
+}
