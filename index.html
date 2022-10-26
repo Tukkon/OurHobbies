@@ -49,6 +49,8 @@
             text-align: center;
             color: transparent;
             -webkit-text-stroke: 1px #fff;
+            cursor: pointer;
+
         }
         .button{
             width: 30%;
@@ -67,9 +69,9 @@
             <td colspan="3" class="header">Welcome to Better Girl!</td>
         </tr>
         <tr>
-            <td onclick="random()" class="tovch" id="name"></td>
+            <td onclick="randomr()" class="tovch" id="name"></td>
             <td onclick="random()" class="button">Which one would you choose?</td>          
-            <td onclick="random()" class="tovch" id="names"></td>
+            <td onclick="randoml()" class="tovch" id="names"></td>
         </tr>
     </table>
     <div style="text-align: center; color:rgb(193, 234, 234)">
@@ -80,6 +82,16 @@
     const random = () => {
         const names = ['Baysal', 'Namuun', 'T.Saruul', 'N.Saruul', 'Tselmeg', 'Tselmuun', 'Tergel', 'Bolormaa', 'Tugsjargal', 'Dulguun', 'Anujin', 'Anh-Od', 'Hulan', 'Bayrjargal', 'Misheel', 'Yesui', 'Bayrchimeg', 'Tseveen-Orlom', 'Ulziihishig', 'Maralmaa', 'Sainsaihan', 'Tanan', 'Emujin']
         document.getElementById("name").innerHTML = names[Math.trunc(Math.random() * 23)]
+        document.getElementById("names").innerHTML = names[Math.trunc(Math.random() * 23)]
+    }
+    const randoml = () => {
+        const names = ['Baysal', 'Namuun', 'T.Saruul', 'N.Saruul', 'Tselmeg', 'Tselmuun', 'Tergel', 'Bolormaa', 'Tugsjargal', 'Dulguun', 'Anujin', 'Anh-Od', 'Hulan', 'Bayrjargal', 'Misheel', 'Yesui', 'Bayrchimeg', 'Tseveen-Orlom', 'Ulziihishig', 'Maralmaa', 'Sainsaihan', 'Tanan', 'Emujin']
+        document.getElementById("name").innerHTML = names[Math.trunc(Math.random() * 23)]
+        
+    }
+    const randomr = () => {
+        const names = ['Baysal', 'Namuun', 'T.Saruul', 'N.Saruul', 'Tselmeg', 'Tselmuun', 'Tergel', 'Bolormaa', 'Tugsjargal', 'Dulguun', 'Anujin', 'Anh-Od', 'Hulan', 'Bayrjargal', 'Misheel', 'Yesui', 'Bayrchimeg', 'Tseveen-Orlom', 'Ulziihishig', 'Maralmaa', 'Sainsaihan', 'Tanan', 'Emujin']
+        
         document.getElementById("names").innerHTML = names[Math.trunc(Math.random() * 23)]
     }
 </script>
