@@ -79,10 +79,17 @@
     </div>
 </body>
 <script>
+    let bata=1
     const random = () => {
-        const names = ['Baysal', 'Namuun', 'T.Saruul', 'N.Saruul', 'Tselmeg', 'Tselmuun', 'Tergel', 'Bolormaa', 'Tugsjargal', 'Dulguun', 'Anujin', 'Anh-Od', 'Hulan', 'Bayrjargal', 'Misheel', 'Yesui', 'Bayrchimeg', 'Tseveen-Orlom', 'Ulziihishig', 'Maralmaa', 'Sainsaihan', 'Tanan', 'Emujin']
-        document.getElementById("name").innerHTML = names[Math.trunc(Math.random() * 23)]
+       
+        if (bata===1) {
+          const names = ['Baysal', 'Namuun', 'T.Saruul', 'N.Saruul', 'Tselmeg', 'Tselmuun', 'Tergel', 'Bolormaa', 'Tugsjargal', 'Dulguun', 'Anujin', 'Anh-Od', 'Hulan', 'Bayrjargal', 'Misheel', 'Yesui', 'Bayrchimeg', 'Tseveen-Orlom', 'Ulziihishig', 'Maralmaa', 'Sainsaihan', 'Tanan', 'Emujin']
+          document.getElementById("name").innerHTML = names[Math.trunc(Math.random() * 23)]
         document.getElementById("names").innerHTML = names[Math.trunc(Math.random() * 23)]
+        bata++
+          console.log(bata);
+        }
+          document.getElementById("start").innerHTML="Which one would you choose?
     }
     const randoml = () => {
         const names = ['Baysal', 'Namuun', 'T.Saruul', 'N.Saruul', 'Tselmeg', 'Tselmuun', 'Tergel', 'Bolormaa', 'Tugsjargal', 'Dulguun', 'Anujin', 'Anh-Od', 'Hulan', 'Bayrjargal', 'Misheel', 'Yesui', 'Bayrchimeg', 'Tseveen-Orlom', 'Ulziihishig', 'Maralmaa', 'Sainsaihan', 'Tanan', 'Emujin']
